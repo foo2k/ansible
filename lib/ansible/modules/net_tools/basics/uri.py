@@ -313,6 +313,11 @@ EXAMPLES = r'''
 
 RETURN = r'''
 # The return information includes all the HTTP headers in lower-case.
+content:
+  description: The content of the requested resource if return_content is true
+  returned: When return_content is TRUE.
+  type: string
+  sample: The HTML of the page requested.
 elapsed:
   description: The number of seconds that elapsed while performing the download
   returned: on success
